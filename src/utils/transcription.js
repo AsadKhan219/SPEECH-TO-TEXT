@@ -14,7 +14,7 @@ if (!fs.existsSync(TEMP_DIR)) {
   fs.mkdirSync(TEMP_DIR, { recursive: true });
 }
 
-export const MAX_FILE_SIZE = 2 * 1024 * 1024;
+export const MAX_FILE_SIZE = 25 * 1024 * 1024;
 
 export async function removeFiles(files) {
   for (const file of files) {
