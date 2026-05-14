@@ -18,7 +18,6 @@ export async function transcribeHandler(req, res) {
     filesToDelete.push(req.file.path);
 
     let finalSegments = [];
-consi
     if (req.file.size <= MAX_FILE_SIZE) {
       finalSegments = await transcribe(req.file.path);
       console.log("finalSegments", finalSegments);
